@@ -1,0 +1,145 @@
+
+   /* 容器 */
+   .container {
+/* 垂直方向布局 */
+    flex-direction: column;
+/* 内容水平居中 */
+    align-items: center;
+/* 设置背景颜色为 0 alpha 的黑色，即完全透明的黑色 */
+    background-color: #ff000000;
+}
+
+/* 输入框容器 */
+.input_container {
+/* 上、下、左、右分别留出 40px、0px、100px、0px 的内边距 */
+    padding: 40px 0px 100px 0px;
+/* 设置背景颜色为浅粉红 */
+    background-color: #ff340505;
+/* 设置下左角和下右角的圆角半径为 14px */
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+/* 垂直方向布局 */
+    flex-direction: column;
+/* 占据 30% 的弹性空间 */
+    flex: 0.3;
+}
+
+/* 按钮样式 */
+button {
+/* 设置按钮半径为 50px */
+    radius: 50px;
+}
+
+/* 文本样式 */
+.text {
+/* 设置字体大小为 40px */
+    font-size: 40px;
+/* 设置字体颜色为白色 */
+    color: #ffffff;
+/* 设置左外边距为 20px */
+    margin-left: 20px;
+}
+#bt {
+    font-size: 26px;
+}
+/* 输入框样式 */
+.inputVal {
+/* 设置字体大小为 26px */
+    font-size: 26px;
+/* 设置字体颜色为白色 */
+    color: white;
+/* 设置高度为 28px */
+    height: 28px;
+/* 宽度占据 100% 的空间 */
+    width: 100%;
+/* 文本内容向右对齐 */
+    text-align: end;
+/* 上内边距 20px，左右内边距 5px */
+    margin: 20px 5px;
+}
+
+/* 结果框样式 */
+#result {
+/* 设置字体大小为42px */
+    font-size: 42px;
+/* 设置字体颜色为白色 */
+    color: white;
+/* 设置高度为42px */
+    height: 42px;
+/* 宽度占据 100% 的空间 */
+    width: 100%;
+/* 文本内容向右对齐 */
+    text-align: end;
+}
+
+/* 网格容器样式 */
+.grid-container {
+/* 占据剩余的 70% 的弹性空间 */
+    flex: 0.7;
+/* top 设置为 100px，这里可能是需要删除的注释 */
+/* top: 100px; */
+}
+
+/* 网格样式 */
+.grid {
+/* 宽度占据 100% 的空间 */
+    width: 100%;
+/* 高度占据 100% 的空间 */
+    height: 100%;
+/* 右外边距为 2px */
+    margin-right: 2px;
+}
+
+/* 按钮激活样式 */
+button:active {
+/* 设置背景颜色为深灰色 */
+    background-color: #242323;
+}
+
+/* 网格行样式 */
+.grid-row {
+/* 项目之间水平对齐，两端对齐 */
+    justify-content: space-between;
+/* 高度为 98px */
+    height: 98px;
+/* 内容垂直居中对齐 */
+    align-items: center;
+}
+
+/* 数字和运算符容器样式 */
+.value-container {
+/* 设置字体颜色为白色 */
+    color: white;
+/* 设置字体大小为 24px */
+    font-size: 24px;
+/* 垂直居中对齐 */
+    justify-content: center;
+/* 设置背景颜色为透明 */
+    background-color: transparent;
+}
+
+/* 运算符样式 */
+.operator {
+/* 设置字体颜色为白色 */
+    color: white;
+/* 设置字体大小为 28px */
+    font-size: 28px;
+/* 垂直居中对齐 */
+    justify-content: center;
+/* 右外边距为 6px */
+    margin-right: 6px;
+}
+
+/* 等于号样式 */
+.equal {
+/* 设置背景颜色为 */
+    background-color: #ff92e81a;
+}
+
+/* 横屏手机样式 */
+@media screen and (device-type: phone) and (orientation: landscape) {
+/* 标题字体大小调整为 60px */
+    .title {
+        font-size: 60px;
+    }
+}

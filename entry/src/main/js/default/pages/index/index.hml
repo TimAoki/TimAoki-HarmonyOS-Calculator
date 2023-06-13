@@ -1,0 +1,120 @@
+<!--创建了一个计算器的HTML页面-->
+
+<div class="container">
+<!--容器，包含输入和输出-->
+    <div class="input_container">
+    <!--样式为输入容器-->
+        <text class="text" id="bt">计算器v2023</text>
+    <!--文本标题部分-->
+        <text class="inputVal" id="input-text">{{calc}}</text>
+    <!--显示输入值的部分-->
+        <text id="result">{{result}}</text>
+    <!--显示输出结果的部分-->
+    </div>
+
+    <div class="grid-container">
+    <!--创建了一个网格容器，用于将按钮放在一起-->
+        <grid-container class="grid" columns="4">
+        <!--将按钮放在四列网格中-->
+            <grid-row class="grid-row">
+            <!--第一行：AC、C、%、÷ 按钮-->
+                <grid-col span="1">
+                <!--第一列：AC按钮-->
+                    <button class="value-container" type="circle" onclick="getPressedValue" id="ac">AC</button>
+                </grid-col>
+                <grid-col span="1">
+                <!--第二列：C按钮-->
+                    <button class="value-container" type="circle" onclick="getPressedValue" id="c">C</button>
+                </grid-col>
+                <grid-col span="1">
+                <!--第三列：%按钮-->
+                    <button class="operator" type="circle" onclick="getPressedValue" id="%">%</button>
+                </grid-col>
+                <grid-col span="1">
+                <!--第四列：÷按钮-->
+                    <button class="operator" type="circle" onclick="getPressedValue" id="/">÷</button>
+                </grid-col>
+            </grid-row>
+
+            <grid-row class="grid-row">
+            <!--第二行：7、8、9、× 按钮-->
+                <grid-col span="1">
+                <!--第一列：7按钮-->
+                    <button class="value-container" type="circle" onclick="getPressedValue" id="7">7</button>
+                </grid-col>
+                <grid-col span="1">
+                <!--第二列：8按钮-->
+                    <button class="value-container" type="circle" onclick="getPressedValue" id="8">8</button>
+                </grid-col>
+                <grid-col span="1">
+                <!--第三列：9按钮-->
+                    <button class="value-container" type="circle" onclick="getPressedValue" id="9">9</button>
+                </grid-col>
+                <grid-col span="1">
+                <!--第四列：×按钮-->
+                    <button class="operator" type="circle" onclick="getPressedValue" id="*">×</button>
+                </grid-col>
+            </grid-row>
+
+            <grid-row class="grid-row">
+            <!--第三行：4、5、6、- 按钮-->
+                <grid-col span="1">
+                <!--第一列：4按钮-->
+                    <button class="value-container" type="circle" onclick="getPressedValue" id="4">4</button>
+                </grid-col>
+                <grid-col span="1">
+                <!--第二列：5按钮-->
+                    <button class="value-container" type="circle" onclick="getPressedValue" id="5">5</button>
+                </grid-col>
+                <grid-col span="1">
+                <!--第三列：6按钮-->
+                    <button class="value-container" type="circle" onclick="getPressedValue" id="6">6</button>
+                </grid-col>
+                <grid-col span="1">
+                <!--第四列：-按钮-->
+                    <button class="operator" type="circle" onclick="getPressedValue" id="-">−</button>
+                </grid-col>
+            </grid-row>
+
+            <grid-row class="grid-row">
+            <!--第四行：1、2、3、+ 按钮-->
+                <grid-col span="1">
+                <!--第一列：1按钮-->
+                    <button class="value-container" type="circle" onclick="getPressedValue" id="1">1</button>
+                </grid-col>
+                <grid-col span="1">
+                <!--第二列：2按钮-->
+                    <button class="value-container" type="circle" onclick="getPressedValue" id="2">2</button>
+                </grid-col>
+                <grid-col span="1">
+                <!--第三列：3按钮-->
+                    <button class="value-container" type="circle" onclick="getPressedValue" id="3">3</button>
+                </grid-col>
+                <grid-col span="1">
+                <!--第四列：+按钮-->
+                    <button class="operator" type="circle" onclick="getPressedValue" id="+">+</button>
+                </grid-col>
+            </grid-row>
+
+            <grid-row class="grid-row">
+            <!--第五行：pow、0、.、= 按钮-->
+                <grid-col span="1">
+                <!--第一列：pow按钮，表示乘方-->
+                    <button class="value-container" type="circle" onclick="getPressedValue" id="power">pow</button>
+                </grid-col>
+                <grid-col span="1">
+                <!--第二列：0按钮-->
+                    <button class="value-container" type="circle" onclick="getPressedValue" id="0">0</button>
+                </grid-col>
+                <grid-col span="1">
+                <!--第三列：.按钮-->
+                    <button class="value-container" type="circle" onclick="getPressedValue" id="point">.</button>
+                </grid-col>
+                <grid-col span="1">
+                <!--第四列：=按钮-->
+                    <button class="operator equal" type="circle" onclick="getPressedValue" id="equalTo">=</button>
+                </grid-col>
+            </grid-row>
+        </grid-container>
+    </div>
+</div>
